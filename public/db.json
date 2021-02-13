@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "id": "2100001",
+            "date": "01.01.2021 12:53:39",
+            "client": "Nick Jonas",
+            "brand": "Renault",
+            "phone": "+375 (29) 1111111",
+            "category": "survey"
+        },
+        {
+            "id": "2100002",
+            "date": "05.01.2021 10:22:19",
+            "client": "Tom Hanks",
+            "brand": "Audi",
+            "phone": "+375 (29) 2222222",
+            "category": "survey"
+        },
+        {
+            "id": "2100003",
+            "date": "06.01.2021 09:42:21",
+            "client": "Arnold Schwarzenegger",
+            "brand": "BMW",
+            "phone": "+375 (29) 3333333",
+            "category": "survey"
+        },
+        {
+            "id": "2100004",
+            "date": "02.01.2021 12:53:39",
+            "client": "John Travolta",
+            "brand": "Renault",
+            "phone": "+375 (29) 4444444",
+            "category": "survey"
+        },
+        {
+            "id": "2100005",
+            "date": "05.01.2021 10:22:19",
+            "client": "Steven Spielberg",
+            "brand": "Audi",
+            "phone": "+375 (29) 5555555",
+            "category": "survey"
+        },
+        {
+            "id": "2100006",
+            "date": "06.01.2021 09:42:21",
+            "client": "Nicolas Cage",
+            "brand": "MITSUBISHI",
+            "phone": "+375 (29) 3333333",
+            "category": "survey"
+        }
+    ]
+}

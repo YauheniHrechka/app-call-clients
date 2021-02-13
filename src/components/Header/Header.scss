@@ -5,5 +5,35 @@
     background: #666666;
     top: 0;
     left: 0;
-    text-align: center;
+
+    ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .category {
+            height: 30px;
+            margin: 0 20px;
+            padding: 15px;
+            cursor: pointer;
+            line-height: 0px;
+            border: 2px solid #d9d9d9;
+            border-radius: 15px;
+            transition: .2s;
+
+            &:hover {
+                border-color: #fff;
+                box-shadow: 0 0 10px #10eb00;
+            }
+        }
+
+        .active {
+            opacity: 1;
+            color: #10eb00;
+            border-color: #10eb00;
+            transform: scale(1.15);
+        }
+    }
 }
