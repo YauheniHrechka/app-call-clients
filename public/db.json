@@ -22,7 +22,7 @@
             "client": "Arnold Schwarzenegger",
             "brand": "BMW",
             "phone": "+375 (29) 3333333",
-            "category": "survey"
+            "category": "invitation"
         },
         {
             "id": "2100004",
@@ -46,7 +46,7 @@
             "client": "Nicolas Cage",
             "brand": "MITSUBISHI",
             "phone": "+375 (29) 3333333",
-            "category": "survey"
+            "category": "invitation"
         }
     ]
 }

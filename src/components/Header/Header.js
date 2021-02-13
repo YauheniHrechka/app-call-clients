@@ -2,7 +2,8 @@ import React from 'react';
 import './Header.scss';
 
 import { useSelector } from 'react-redux';
-import { setCategories } from '../../redux/actions/categories'
+import { setCategories } from '../../redux/actions/categories';
+import { setFilterByCategory } from '../../redux/actions/filter';
 import { Context } from '../../context/context';
 
 import axios from 'axios';
@@ -10,10 +11,10 @@ import axios from 'axios';
 const Header = () => {
 
     const dispatch = React.useContext(Context);
-    const { categories } = useSelector(({ categories }) => ({
-        categories
+    const { categories, filter } = useSelector(({ categories, filter: { category } }) => ({
+        categories,
+        filter: category
     }));
-    const [active, setActive] = React.useState(1);
 
     React.useEffect(() => {
 
@@ -25,11 +26,11 @@ const Header = () => {
     return (
         <header className="header">
             <ul>
-                {categories.map(({ id, name }) =>
+                {categories.map(({ id, name, category }) =>
                     <li
                         key={id}
-                        className={`category ${active === id ? `active` : ``}`}
-                        onClick={() => setActive(id)}
+                        className={`category ${filter === category ? `active` : ``}`}
+                        onClick={() => dispatch(setFilterByCategory(category))}
                     >{name}</li>
                 )}
             </ul>
